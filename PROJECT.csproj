@@ -1,0 +1,317 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{23A5630B-7446-4B92-AC9D-641FAC981B87}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>PROJECT</RootNamespace>
+    <AssemblyName>PROJECT</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.9.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>packages\BouncyCastle.1.8.9\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.13.3, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>packages\iTextSharp.5.5.13.3\lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADMIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADMIN.Designer.cs">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Pass_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Pass_User.Designer.cs">
+      <DependentUpon>Change_Pass_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Change_Provider_Pass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Change_Provider_Pass.Designer.cs">
+      <DependentUpon>Change_Provider_Pass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Dialog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Dialog.Designer.cs">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN_SIGNUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN_SIGNUP.Designer.cs">
+      <DependentUpon>LOGIN_SIGNUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LOGIN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LOGIN.Designer.cs">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Payment_Entry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Payment_Entry.Designer.cs">
+      <DependentUpon>Payment_Entry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PROVIDERSIGNUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROVIDERSIGNUP.Designer.cs">
+      <DependentUpon>PROVIDERSIGNUP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PROVIDER_MANAGEMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROVIDER_MANAGEMENT.Designer.cs">
+      <DependentUpon>PROVIDER_MANAGEMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PROVIDER_PANEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROVIDER_PANEL.Designer.cs">
+      <DependentUpon>PROVIDER_PANEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PROVIDER_PROFILE_DIALOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROVIDER_PROFILE_DIALOG.Designer.cs">
+      <DependentUpon>PROVIDER_PROFILE_DIALOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PROVIDER_SIGNUP_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PROVIDER_SIGNUP_2.Designer.cs">
+      <DependentUpon>PROVIDER_SIGNUP_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_2.Designer.cs">
+      <DependentUpon>USER_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_MANAGEMENT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_MANAGEMENT.Designer.cs">
+      <DependentUpon>USER_MANAGEMENT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_PANEL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_PANEL.Designer.cs">
+      <DependentUpon>USER_PANEL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_PROFILE_DIALOG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_PROFILE_DIALOG.Designer.cs">
+      <DependentUpon>USER_PROFILE_DIALOG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="USER_SIGNUP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="USER_SIGNUP.Designer.cs">
+      <DependentUpon>USER_SIGNUP.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADMIN.resx">
+      <DependentUpon>ADMIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Pass_User.resx">
+      <DependentUpon>Change_Pass_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Change_Provider_Pass.resx">
+      <DependentUpon>Change_Provider_Pass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Dialog.resx">
+      <DependentUpon>Dialog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN_SIGNUP.resx">
+      <DependentUpon>LOGIN_SIGNUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LOGIN.resx">
+      <DependentUpon>LOGIN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Payment_Entry.resx">
+      <DependentUpon>Payment_Entry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="PROVIDERSIGNUP.resx">
+      <DependentUpon>PROVIDERSIGNUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROVIDER_MANAGEMENT.resx">
+      <DependentUpon>PROVIDER_MANAGEMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROVIDER_PANEL.resx">
+      <DependentUpon>PROVIDER_PANEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROVIDER_PROFILE_DIALOG.resx">
+      <DependentUpon>PROVIDER_PROFILE_DIALOG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PROVIDER_SIGNUP_2.resx">
+      <DependentUpon>PROVIDER_SIGNUP_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_2.resx">
+      <DependentUpon>USER_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_MANAGEMENT.resx">
+      <DependentUpon>USER_MANAGEMENT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_PANEL.resx">
+      <DependentUpon>USER_PANEL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_PROFILE_DIALOG.resx">
+      <DependentUpon>USER_PROFILE_DIALOG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="USER_SIGNUP.resx">
+      <DependentUpon>USER_SIGNUP.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\109395-green-wave-free-download-image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\5127314.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\user.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\pass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\lock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\login-icon-free-vector.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\93634.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\402718.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\1306388.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\png-transparent-computer-icons-customer-service-icon-design-it-service-management-ub4we-engineering-services-hand-service-desktop-wallpaper-thumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\linear-icon-management-support-control-vector-illustration-business-male-tie-suit-machine-mechanism-outline-simple-217089049.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\images1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\istockphoto-1264245287-170667a.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\istockphoto-1264245287-170667a1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\images2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\1184149.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\4-46683_free-vintage-clip-art-2-clipart-hand-drawn-circle-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\download.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\11-05-2023-[ 000052 ].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\11-05-2023-[ 000053 ].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\11-05-2023-[ 000054 ].png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\1000_F_162710991_w8hiopK4ymgjDnSD55eA3XWG04IANWCA.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\images3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="RESOURCES\images4.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
